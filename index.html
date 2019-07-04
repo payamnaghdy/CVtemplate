@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>     
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  </head>
+
+  <body>
+        <!-- Navbar goes here -->
+          
+      <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper black">
+              <a href="#!" class="brand-logo">Resume</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#per">Personal</a></li>
+                <li><a href="#Education">Education</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+          
+                
+        
+  
+          
+    <!-- side Navbar goes here -->
+
+    <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="p1.png">
+          </div>
+          <a href="#user"><img class="circle" src="profile.jpg"></a>
+          <a href="#name"><span class="white-text name">Payam Naghdy</span></a>
+          <a href="#email"><span class="white-text email">payamnaghdy1@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+
+    <!-- Page Layout here -->
+      <div class="" >
+          <div class="parallax-container">
+              <div class="parallax"><img src="p2.jpg"></div>
+            </div>
+            <div class="row container">
+              <h2 class="header" id="per">Personal profile </h2>
+              <div class="row">
+                <div class="col s2">
+                  <img src="profile.jpg" alt="" class="circle responsive-img">
+                </div>
+                <div class="col s8">
+                  <h4>
+                      name
+                  </h4>
+                  <h5>
+                      Email
+                  </h5>
+                  <h5>
+                      number 
+                  </h5>
+                  <h5>
+                      address
+                  </h5>
+                </div>
+        
+              </div>
+             
+              <p class="grey-text text-darken-3 lighten-3"> Enter a brief summary of your education, work history, and skills that make you a great fit for the job you’re applying for.</p>
+            </div>
+        
+          <div class="parallax-container">
+              <div class="parallax"><img src="p2.jpg"></div>
+          </div>
+        
+          <div class="section white">
+            <div class="row container" id = "Education">
+              <h2 class="header">Education</h2>
+              <div class="row">
+                <div class="col s4">
+                    <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">B.Sc. degree </span>
+                      <p>your B.Sc. degree  details</p>
+                    </div>
+                </div>
+              </div>
+        
+              <div class="col s4">
+                  <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">M.Sc. degree</span>
+                    <p>your M.Sc. degree details</p>
+                  </div>
+              </div>
+            </div>
+        
+            <div class="col s4">
+                <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">PHD</span>
+                  <p>your phd details.</p>
+                </div>
+            </div>
+          </div>
+        
+            </div>
+          </div>
+          </div>
+        
+          <div class="parallax-container">
+              <div class="parallax"><img src="p2.jpg"></div>
+          </div>
+        
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header">Parallax</h2>
+              <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header">Parallax</h2>
+              <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+            </div>
+
+
+
+      </div>
+        
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">call</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">contact_phone</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">chat</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">copyright</i></a></li>
+      <li><a href="#" data-target="slide-out" class="sidenav-trigger btn-floating black"><i class="material-icons">menu</i></a></li>
+    </ul>
+  </div>
+            
+<script>
+    M.AutoInit();
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, {});
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {});
+  });
+
+  });
+
+
+  </script>
+        
+  </body>
+</html>
